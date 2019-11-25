@@ -1,13 +1,14 @@
 package starter.navigation;
 
+import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.annotations.Step;
 
 public class NavigateTo {
 
-    DuckDuckGoHomePage duckDuckGoHomePage;
+    IsStubaGoToHomePage isStubaGoToHomePage;
 
-    @Step("Open the DuckDuckGo home page")
-    public void theDuckDuckGoHomePage() {
-        duckDuckGoHomePage.open();
+    @Step("Open the IsStuba home page")
+    public void theIsStubaHomePage() {
+        isStubaGoToHomePage.open();
     }
 }
