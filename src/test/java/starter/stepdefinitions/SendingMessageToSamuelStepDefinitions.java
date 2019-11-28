@@ -17,7 +17,6 @@ import starter.navigation.LogInIsStuba;
 import starter.navigation.NavigateTo;
 
 import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class SendingMessageToSamuelStepDefinitions {
     @Steps
