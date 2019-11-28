@@ -7,4 +7,4 @@ Feature: Sending new message to Samuel
     And she types message "Zuzka testuje Javu. (: "
     And she save message to sent
     And she clicks send message
-    Then the message should be sent
+    Then last reciever is "xvaneks@is.stuba.sk"

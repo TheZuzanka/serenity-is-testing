@@ -40,6 +40,7 @@ public class logInStepDefinitions {
     public void sheShouldBeLoggedIn() {
         WebDriver driver = getDriver();
         String log = driver.findElement(By.id("log")).getText();
+        System.out.println("log = " + log);
 
         assertThat(log).contains("Zuzana");
     }

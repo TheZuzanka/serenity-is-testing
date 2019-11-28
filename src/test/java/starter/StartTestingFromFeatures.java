@@ -7,6 +7,6 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         plugin = {"pretty"},
-        features = "src/test/resources/features/is_features/entering_messages.feature"
+        features = "src/test/resources/features/is_features/sending_new_message_to_samko.feature"
 )
 public class StartTestingFromFeatures {}
