@@ -14,7 +14,7 @@ import starter.navigation.NavigateTo;
 import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SendMessaGeToSamuelStepDefinitions {
+public class EnterMessagesCardStepDefinitions {
     @Steps
     NavigateTo navigateTo;
 

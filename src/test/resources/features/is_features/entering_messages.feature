@@ -1,4 +1,4 @@
-Feature: Send message to Samuel
+Feature: Entering messages card
 
   Scenario: Entering the message card
     Given Zuzana is signed in with credentials "xwlachovska" and "Wlacha753951"
