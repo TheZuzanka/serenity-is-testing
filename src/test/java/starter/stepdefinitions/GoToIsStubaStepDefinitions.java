@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import starter.navigation.NavigateTo;
 import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
 import static org.assertj.core.api.Assertions.assertThat;
-import static starter.matchers.TextMatcher.textOf;
 
 public class GoToIsStubaStepDefinitions {
     @Steps
@@ -16,7 +15,7 @@ public class GoToIsStubaStepDefinitions {
 
     @Given("Sergey opened browser")
     public void i_open_browser() {
-        navigateTo.theIsStubaHomePage();
+        navigateTo.theIsStubaAuthPage();
         WebDriver driver = getDriver();
         String currentUrl = driver.getCurrentUrl();
         System.out.println("current url after set = " + currentUrl);

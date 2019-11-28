@@ -7,7 +7,7 @@ public class NavigateTo {
     IsStubaGoToAuthPage isStubaGoToAuthPage;
 
     @Step("Open the IsStuba home page")
-    public void theIsStubaHomePage() {
+    public void theIsStubaAuthPage() {
         isStubaGoToAuthPage.open();
     }
 }

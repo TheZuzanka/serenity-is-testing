@@ -20,7 +20,7 @@ public class logInStepDefinitions {
 
     @Given("she is on ais")
     public void sheIsOnAis() {
-        navigateTo.theIsStubaHomePage();
+        navigateTo.theIsStubaAuthPage();
     }
 
     @When("she enters name {string}")
