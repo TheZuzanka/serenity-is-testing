@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import starter.navigation.NavigateTo;
 
 import java.util.List;
 
@@ -18,11 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class FindFinalGradeStepDefinitions {
     @When("she navigates to e-study record")
     public void navigateToEStudyRecord() {
-        WebDriver driver = getDriver();
-
-        driver.findElement(By.linkText("Student's portal")).click();
-        driver.findElement(By.linkText("E-study record")).click();
-        System.out.println("adresa = " + driver.getCurrentUrl());
+        NavigateTo.estudyRecord();
     }
 
     @And("she choose {string}")
