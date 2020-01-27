@@ -21,7 +21,11 @@ public class CheckIfGradeMatches {
         //uz mam najdeny spravny riadok, urobim v nom co potrebujem: znamka je v stlpci c. 6
         finalGrade = findFinalGrade(rowContainingSubject);
 
-        if(finalGrade.contains("(" + grade + ")")){
+        if(finalGrade == null){
+            System.out.println("Error in finding subject..");
+            containsText = false;
+        }
+        else if(finalGrade.contains("(" + grade + ")")){
             System.out.println("E-study record contains expected grade \"" + grade + "\"");
             containsText = true;
         }
