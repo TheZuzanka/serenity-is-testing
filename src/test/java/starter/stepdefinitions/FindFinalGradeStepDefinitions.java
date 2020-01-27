@@ -4,11 +4,9 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.serenitybdd.core.annotations.findby.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.WebElement;
+import starter.enteringData.ChangeTimePeriod;
 import starter.navigation.NavigateTo;
 
 import java.util.List;
@@ -24,14 +22,7 @@ public class FindFinalGradeStepDefinitions {
 
     @And("she choose {string}")
     public void choosePeriod(String term) {
-        WebDriver driver = getDriver();
-
-        Select period = new Select(driver.findElement(By.name("obdobi")));
-        period.selectByVisibleText(term + " - FIIT");
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.name("omezit_popupy"))).click();
-
-        String prvyRiadok = driver.findElement(By.linkText("Algebra and Discrete Mathematics")).getText();
-        System.out.println("Prvy riadok = " + prvyRiadok);
+        ChangeTimePeriod.choosePeriod(term);
     }
 
     @Then("she found {string} from {string}")
